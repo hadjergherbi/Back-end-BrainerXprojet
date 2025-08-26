@@ -6,7 +6,9 @@ const authRoutes=require("./routes/auth.routes")
 const profileRoutes=require("./routes/profile.routes")
 const app=express()
 const corsOptions={
- origin:["http://localhost:5173"]
+ origin:["http://localhost:5173",
+    "https://gpt-3-brainerx.netlify.app"
+ ]
 }
 app.use(cors(corsOptions))
 app.use(express.json())
